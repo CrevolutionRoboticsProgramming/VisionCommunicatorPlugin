@@ -41,7 +41,7 @@ public final class VisionCommunicatorWidget extends SimpleAnnotatedWidget<Placeh
     File profileFile = new File(profileDirectory + '\\' + profileName);
     private String defaultProfile = "host-ip=10.0.0.100;send-port=1184;receive-port=1182;low-hue=1184;low-saturation=0;low-value=122;high-hue=206;high-saturation=105;high-value=255";
 
-    private Font textFont = Font.font("Roboto", FontWeight.BOLD, 16);
+    private Font textFont = Font.font("Roboto", FontWeight.BOLD, 13);
     private Font textFieldFont = new Font("Courier New", 15);
     private Font buttonFont = new Font("Roboto", 15);
 
@@ -108,7 +108,6 @@ public final class VisionCommunicatorWidget extends SimpleAnnotatedWidget<Placeh
         highSaturationSlider.setOnMouseReleased(e -> sliderUpdateHelper(highSaturationSlider, highSaturationField, "high-saturation"));
         lowValueSlider.setOnMouseReleased(e -> sliderUpdateHelper(lowValueSlider, lowValueField, "low-value"));
         highValueSlider.setOnMouseReleased(e -> sliderUpdateHelper(highValueSlider, highValueField, "high-value"));
-
 
         Scanner in = null;
         try
@@ -413,7 +412,7 @@ public final class VisionCommunicatorWidget extends SimpleAnnotatedWidget<Placeh
     {
         try
         {
-            PrintWriter writer = new PrintWriter("profile.txt");
+            PrintWriter writer = new PrintWriter(profileFile);
 
             String outProfile = "host-ip=" + hostIPField.getText() +
                     ";send-port=" + sendPortField.getText() +
