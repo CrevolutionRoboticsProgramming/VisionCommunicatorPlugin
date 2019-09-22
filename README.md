@@ -1,6 +1,8 @@
 # VisionCommunicatorPlugin
 
-### Crevolution's Shuffleboard UDP communication GUI for interfacing with our [OffseasonVision2019](https://github.com/CrevolutionRoboticsProgramming/OffseasonVision2019) vision processing program
+### Crevolution's Shuffleboard UDP communications GUI for interfacing with our [OffseasonVision2019](https://github.com/CrevolutionRoboticsProgramming/OffseasonVision2019) vision processing program
+
+We recommend using the other [VisionCommunicator](https://github.com/CrevolutionRoboticsProgramming/VisionCommunicator) project instead of this one. This one is much more unstable. WPI didn't make their programs very easy to debug.
 
 ## Usage
 
